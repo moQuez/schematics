@@ -11,6 +11,7 @@ Guidelines:
 - Install baseline deps via `scripts/setup.sh`; verify with `scripts/doctor.sh`.
 - Keep documentation minimal and update this file when new tooling or structure is introduced.
 - Keep `apps.md` current for both apps and dependencies; avoid adding dependencies unless clearly justified to prevent bloat.
+- Use Conventional Commits for commit messages.
 
 Planned layout:
 
