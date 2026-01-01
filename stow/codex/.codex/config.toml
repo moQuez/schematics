@@ -1,10 +1,13 @@
 model = "gpt-5.2-codex"
 model_reasoning_effort = "high"
-notifications = ["agent-turn-complete", "approval-requested"]
 notify = [
   "/bin/sh",
   "/home/moquez/Development/schematics/scripts/codex-notify.sh",
 ]
+
+[tui]
+notifications = ["approval-requested"]
+
 [projects."/home/moquez/Development/endurance-mate"]
 trust_level = "trusted"
 
