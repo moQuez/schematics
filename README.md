@@ -5,6 +5,7 @@ Personal dotfiles and configuration for my Arch Linux setup (2015 MacBook Pro Re
 Notes:
 
 - Use GNU Stow to manage dotfiles from `stow/` into `~`.
+- Bootstrap: `scripts/bootstrap.sh --all` or `scripts/bootstrap.sh <package...>`.
 - Keep dependencies minimal and shell-friendly (POSIX sh when possible).
 - Focus is this machine first; shared config between machines may come later.
 

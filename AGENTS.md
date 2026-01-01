@@ -7,6 +7,7 @@ Guidelines:
 - Prefer POSIX sh or broadly compatible shell scripts; avoid Python/Node/Ruby unless clearly justified.
 - Keep dependencies minimal; favor tools easily installed via `pacman` (e.g., `rg`, `fzf`).
 - Use GNU Stow for dotfiles: each subfolder in `stow/` is a package stowed into `~`.
+- Bootstrap via `scripts/bootstrap.sh` (supports `--all` or explicit packages).
 - Keep documentation minimal and update this file when new tooling or structure is introduced.
 
 Planned layout:
