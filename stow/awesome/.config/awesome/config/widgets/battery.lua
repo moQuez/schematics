@@ -5,6 +5,7 @@ local naughty = require("naughty")
 local beautiful = require("beautiful")
 
 return function(opts)
+    local screen = opts.screen
     local warn_level = opts.warn_level or 20
     local critical_level = opts.critical_level or 10
 

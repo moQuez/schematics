@@ -5,11 +5,18 @@ local awful = require("awful")
 require("awful.autofocus")
 local beautiful = require("beautiful")
 
+local globals = {
+	awesome = rawget(_G, "awesome"),
+	client = rawget(_G, "client"),
+	root = rawget(_G, "root"),
+	screen = rawget(_G, "screen"),
+}
+
 -- Enable hotkeys help widget for VIM and other apps.
 require("awful.hotkeys_popup.keys")
 
 -- Error notifications early so module errors are visible.
-require("config.error")
+require("config.error")({ awesome = globals.awesome })
 
 -- Centralized defaults (terminal, modkey, layouts, etc).
 local vars = require("config.vars")
@@ -21,10 +28,16 @@ beautiful.init("~/.config/awesome/themes/default/theme.lua")
 awful.layout.layouts = vars.layouts
 
 -- Menus and widgets.
-local menu = require("config.menu")(vars)
+local menu = require("config.menu")({
+	awesome = globals.awesome,
+	terminal = vars.terminal,
+	browser = vars.browser,
+	editor_cmd = vars.editor_cmd,
+})
 local battery = require("config.widgets.battery")({
 	warn_level = vars.battery_warn_level,
 	critical_level = vars.battery_critical_level,
+	screen = globals.screen,
 })
 local volume = require("config.widgets.volume")()
 local power = require("config.power")()
@@ -36,6 +49,8 @@ require("config.wibar")({
 	battery_widget = battery.widget,
 	volume_widget = volume.widget,
 	tags = vars.tags,
+	client = globals.client,
+	screen = globals.screen,
 })
 
 -- Global and client keybindings (plus mouse bindings).
@@ -45,6 +60,9 @@ local bindings = require("config.bindings")({
 	menu = menu.mainmenu,
 	update_volume = volume.update,
 	show_power_menu = power.show,
+	awesome = globals.awesome,
+	client = globals.client,
+	root = globals.root,
 })
 
 -- Client rules depend on key/button bindings.
@@ -54,5 +72,8 @@ require("config.rules")({
 })
 
 -- Runtime signals and startup commands.
-require("config.signals")
-require("config.autostart")
+require("config.signals")({
+	awesome = globals.awesome,
+	client = globals.client,
+})
+require("config.autostart")({ awesome = globals.awesome })

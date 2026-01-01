@@ -4,6 +4,8 @@ local wibox = require("wibox")
 local beautiful = require("beautiful")
 
 return function(opts)
+    local client = opts.client
+    local screen = opts.screen
     local modkey = opts.modkey
     local launcher = opts.launcher
     local battery_widget = opts.battery_widget

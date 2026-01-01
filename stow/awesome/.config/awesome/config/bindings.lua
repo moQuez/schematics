@@ -4,6 +4,9 @@ local menubar = require("menubar")
 local hotkeys_popup = require("awful.hotkeys_popup")
 
 return function(opts)
+    local awesome = opts.awesome
+    local client = opts.client
+    local root = opts.root
     local modkey = opts.modkey
     local terminal = opts.terminal
     local menu = opts.menu
