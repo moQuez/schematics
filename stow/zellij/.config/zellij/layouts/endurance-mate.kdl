@@ -1,0 +1,45 @@
+layout {
+  cwd "~/Development/endurance-mate"
+
+  // Wrap every tab with the tab bar (top) and status bar (bottom)
+  default_tab_template {
+    pane size=1 borderless=true {
+      plugin location="zellij:tab-bar"
+    }
+    children
+    pane size=1 borderless=true {
+      plugin location="zellij:status-bar"
+    }
+  }
+
+  tab name="code" {
+    pane command="nvim"
+  }
+
+  tab name="git" {
+    pane command="lazygit"
+  }
+
+  tab name="ai" {
+    pane command="mise" {
+      args "exec" "--" "codex"
+    }
+  }
+  
+  tab name="server" {
+    pane command="mise" {
+      args "exec" "--" "./bin/dev"
+    }
+  }
+
+  tab name="console" {
+    pane command="mise" {
+      args "exec" "--" "./bin/rails" "console"
+    }
+  }
+
+  tab name="cli" {
+    pane
+  }
+}
+

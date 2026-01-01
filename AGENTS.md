@@ -10,9 +10,11 @@ Guidelines:
 - Bootstrap via `scripts/bootstrap.sh` (supports `--all` or explicit packages).
 - Install baseline deps via `scripts/setup.sh`; verify with `scripts/doctor.sh`.
 - Keep documentation minimal and update this file when new tooling or structure is introduced.
+- Keep `apps.md` current for both apps and dependencies; avoid adding dependencies unless clearly justified to prevent bloat.
 
 Planned layout:
 
 - `stow/` for dotfiles managed by Stow.
 - `scripts/` for bootstrap and helper scripts.
 - `assets/` for static artifacts.
+Apps list: `apps.md`.

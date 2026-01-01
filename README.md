@@ -9,6 +9,7 @@ Notes:
 - Setup deps: `scripts/setup.sh`; verify: `scripts/doctor.sh`.
 - Keep dependencies minimal and shell-friendly (POSIX sh when possible).
 - Focus is this machine first; shared config between machines may come later.
+- Apps list: `apps.md`.
 
 Planned structure:
 
