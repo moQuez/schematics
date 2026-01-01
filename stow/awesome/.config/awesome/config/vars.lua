@@ -2,7 +2,7 @@ local awful = require("awful")
 
 local M = {}
 
-M.terminal = "alacritty"
+M.terminal = "wezterm"
 M.browser = "firefox"
 M.editor = os.getenv("EDITOR") or "nano"
 M.editor_cmd = M.terminal .. " -e " .. M.editor
