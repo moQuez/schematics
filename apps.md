@@ -7,6 +7,7 @@ Configs in this repo:
 - Bash config — `stow/bash`
 - Codex CLI — `stow/codex`
 - Fontconfig — `stow/fontconfig`
+- Neovim (LazyVim) — `stow/nvim`
 - X11 config — `stow/x11`
 - WezTerm (terminal emulator) — `stow/wezterm`
 - Zellij (terminal workspace) — `stow/zellij`
