@@ -13,6 +13,6 @@ Notes:
 
 Planned structure:
 
-- `stow/` for Stow packages (e.g., `stow/zsh`, `stow/nvim`, `stow/x11`, `stow/awesome`).
+- `stow/` for Stow packages (e.g., `stow/bash`, `stow/x11`, `stow/awesome`).
 - `scripts/` for bootstrap and helper scripts.
 - `assets/` for static artifacts (themes, icons, etc).

@@ -1,0 +1,10 @@
+# Editor used by CLI
+export EDITOR="nvim"
+export SUDO_EDITOR="$EDITOR"
+
+# Default nvim appplication
+export NVIM_APPNAME="nvim-Lazyvim"
+
+# Firefox
+export MOZ_X11_EGL=1
+export MOZ_WEBRENDER=1
