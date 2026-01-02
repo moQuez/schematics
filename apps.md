@@ -6,6 +6,7 @@ Configs in this repo:
 - AwesomeWM (window manager) — `stow/awesome`
 - Bash config — `stow/bash`
 - Codex CLI — `stow/codex`
+- X11 config — `stow/x11`
 - WezTerm (terminal emulator) — `stow/wezterm`
 - Zellij (terminal workspace) — `stow/zellij`
 

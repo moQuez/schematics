@@ -1,0 +1,32 @@
+# XScreenSaver Preferences File
+# Written by xscreensaver-settings 6.10 for moquez on Mon Nov 17 22:29:04 2025.
+# https://www.jwz.org/xscreensaver/
+
+timeout:	0:05:00
+cycle:		0:10:00
+lock:		True
+lockTimeout:	0:01:00
+passwdTimeout:	0:00:30
+visualID:	default
+installColormap:    True
+verbose:	False
+splash:		False
+splashDuration:	0:00:05
+demoCommand:	xscreensaver-settings
+nice:		10
+fade:		False
+unfade:		False
+dpmsEnabled:	True
+dpmsQuickOff:	False
+dpmsStandby:	0:10:00
+dpmsSuspend:	0:15:00
+dpmsOff:	0:20:00
+grabDesktopImages:  True
+grabVideoFrames:    False
+chooseRandomImages: False
+
+mode:		one
+selected:	244
+
+splash: False
+dialogTheme:	borderlessblack
