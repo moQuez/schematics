@@ -1,0 +1,3 @@
+# Firefox GPU env vars for X11 session.
+export MOZ_X11_EGL=1
+export MOZ_WEBRENDER=1
