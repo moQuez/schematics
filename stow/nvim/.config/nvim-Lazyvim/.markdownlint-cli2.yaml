@@ -1,0 +1,3 @@
+# Disable the 80-column line length rule for Markdown.
+config:
+  MD013: false
