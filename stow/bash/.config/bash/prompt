@@ -1,0 +1,11 @@
+# Prompt and per-prompt hooks.
+
+alias_file="$HOME/.config/bash/aliases"
+if [ -f "$alias_file" ]; then
+  case "$PROMPT_COMMAND" in
+    *"source $alias_file"*) ;;
+    *) PROMPT_COMMAND="source $alias_file${PROMPT_COMMAND:+; $PROMPT_COMMAND}" ;;
+  esac
+fi
+
+PS1='[\u@\h \W]\$ '

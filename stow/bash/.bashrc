@@ -9,5 +9,4 @@ source ~/.config/bash/aliases
 source ~/.config/bash/envs
 source ~/.config/bash/evals
 source ~/.config/bash/path
-
-PS1='[\u@\h \W]\$ '
+source ~/.config/bash/prompt
