@@ -1,9 +1,12 @@
 #!/bin/bash
 
+alias a='$EDITOR ~/.config/bash/aliases'
 alias ls='ls --color=auto'
+alias ll='ls -lhA'
 alias grep='grep --color=auto'
 alias v='NVIM_APPNAME=nvim-Lazyvim nvim'
 alias yt='ytsurf --format'
+alias c='clear'
 
 zellij-attach-or-create-session() {
   local name="${1:?session/layout name}"
