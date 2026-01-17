@@ -1,17 +1,18 @@
+#!/bin/bash
+
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 alias v='NVIM_APPNAME=nvim-Lazyvim nvim'
-
+alias yt='ytsurf --format'
 
 zellij-attach-or-create-session() {
   local name="${1:?session/layout name}"
-  zellij --layout "$HOME/.config/zellij/layouts/$name.kdl" attach --create "$name" 
+  zellij --layout "$HOME/.config/zellij/layouts/$name.kdl" attach --create "$name"
 }
 
 alias ze='zellij-attach-or-create-session'
 
 cgpt() { systemd-run --user --scope --unit=chatgpt-pwa firefoxpwa site launch 01K56Q7Y7R1HPYJM3Y7WDQBH65; }
-wa()   { systemd-run --user --scope --unit=whatsapp-pwa firefoxpwa site launch 01K56MNYWD6DYZCY169F8SCPM6; }
-tel()   { systemd-run --user --scope --unit=telegram-pwa firefoxpwa site launch 01K56RYE5W127N6CWHN8Q3W0FX;}
+wa() { systemd-run --user --scope --unit=whatsapp-pwa firefoxpwa site launch 01K56MNYWD6DYZCY169F8SCPM6; }
+tel() { systemd-run --user --scope --unit=telegram-pwa firefoxpwa site launch 01K56RYE5W127N6CWHN8Q3W0FX; }
 spot() { systemd-run --user --scope --unit=spotify-pwa firefoxpwa site launch 01K56NRBQ9J37Q4A3REM67BNGA; }
-
