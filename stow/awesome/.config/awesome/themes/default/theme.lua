@@ -11,7 +11,8 @@ local themes_path = gfs.get_configuration_dir() .. "themes/"
 
 local theme = {}
 
-theme.font = "sans 10"
+theme.font = "sans 11"
+theme.taglist_font = "JetBrainsMono Nerd Font Mono 17"
 
 -- Dracula palette
 theme.bg_normal = "#282a36"

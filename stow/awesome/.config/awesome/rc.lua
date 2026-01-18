@@ -45,7 +45,6 @@ local power = require("config.power")()
 -- Screen setup (tags, wallpaper, wibar, widgets).
 require("config.wibar")({
 	modkey = vars.modkey,
-	launcher = menu.launcher,
 	battery_widget = battery.widget,
 	volume_widget = volume.widget,
 	tags = vars.tags,
