@@ -1,5 +1,5 @@
 layout {
-  cwd "~/Development/endurance-mate"
+  cwd "~/Development/schematics"
 
   // Wrap every tab with the tab bar (top) and status bar (bottom)
   default_tab_template {
@@ -28,18 +28,6 @@ layout {
 
   tab name="git" {
     pane command="lazygit"
-  }
-  
-  tab name="server" {
-    pane command="mise" {
-      args "exec" "--" "./bin/dev"
-    }
-  }
-
-  tab name="console" {
-    pane command="mise" {
-      args "exec" "--" "./bin/rails" "console"
-    }
   }
 }
 
