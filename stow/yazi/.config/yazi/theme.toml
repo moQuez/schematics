@@ -1,0 +1,4 @@
+[icon]
+prepend_dirs = [
+  { name = "Development", text = "" }
+]

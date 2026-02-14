@@ -9,6 +9,7 @@ Configs in this repo:
 - Fontconfig — `stow/fontconfig`
 - Neovim (LazyVim) — `stow/nvim`
 - X11 config — `stow/x11`
+- Yazi (terminal file manager) — `stow/yazi`
 - WezTerm (terminal emulator) — `stow/wezterm`
 - Zellij (terminal workspace) — `stow/zellij`
 
