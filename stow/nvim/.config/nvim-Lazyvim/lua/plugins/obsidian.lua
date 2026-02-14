@@ -14,7 +14,7 @@ return {
     },
   },
   opts = {
-    dir = "~/Development/TestVault",
+    dir = "~/Documents/Memoria/",
     daily_notes = {
       folder = "Journal",
       date_format = "%Y-%m-%d",
