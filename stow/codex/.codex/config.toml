@@ -1,9 +1,10 @@
-model = "gpt-5.2-codex"
+model = "gpt-5.3-codex"
 model_reasoning_effort = "high"
 notify = [
   "/bin/sh",
   "/home/moquez/Development/schematics/scripts/codex-notify.sh",
 ]
+personality = "pragmatic"
 
 [tui]
 notifications = ["approval-requested"]
@@ -15,6 +16,18 @@ trust_level = "trusted"
 trust_level = "untrusted"
 
 [projects."/home/moquez/Development/schematics"]
+trust_level = "trusted"
+
+[projects."/home/moquez/Development/soupawhisper"]
+trust_level = "trusted"
+
+[projects."/home/moquez/Development/TestVault"]
+trust_level = "trusted"
+
+[projects."/home/moquez/Development/dotcom"]
+trust_level = "trusted"
+
+[projects."/home/moquez/Documents/Memoria"]
 trust_level = "trusted"
 
 [notice]
