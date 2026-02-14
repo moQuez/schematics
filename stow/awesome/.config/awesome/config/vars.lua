@@ -12,7 +12,7 @@ M.modkey = "Mod4"
 M.battery_warn_level = 20
 M.battery_critical_level = 10
 
-M.tags = { "  ", " 󰞷 ", "  ", "-", "-", "-", "-", "-", " " }
+M.tags = { "  ", " 󰞷 ", "  ", " 󱗖 ", "  ", "-", "-", "-", "  " }
 
 M.layouts = {
 	awful.layout.suit.tile,
